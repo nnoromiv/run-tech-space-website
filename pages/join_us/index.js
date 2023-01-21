@@ -7,6 +7,7 @@ import Head from "next/head";
 import { base } from "../../util";
 import { useRouter } from "next/router";
 import StackSelect from "../../components/StackSelect";
+import Image from "next/image";
 
 function JoinUs() {
   const [loading, setLoading] = useState(false);
@@ -71,7 +72,7 @@ function JoinUs() {
         <aside className='col-span-12 bg-[#1253A6] bg-[url(../public/images/joinUsBg.png)] bg-cover bg-no-repeat py-12 px-8 md:col-span-4  md:block md:px-12'>
           <Link href='/'>
             <a className='inline-flex items-center gap-3 text-white'>
-              <img src='/images/arrow-left.svg' alt='' />
+              <Image src='/images/arrow-left.svg' alt="" height={"50px"} width={"50px"}/>
               Return to Homepage
             </a>
           </Link>

@@ -25,15 +25,17 @@ function Hero() {
       <div className='order-1 md:order-2'>
         <Image
           src={AboutImage}
+          alt=""
           objectFit
           className=' justify-self-center  md:justify-self-end'
           priority
         />
       </div>
 
-      {/* <img
+      {/* <Image
         src='/images/heroBg.png'
         alt='banner'
+        height={"50px"} width={"50px"}
         className='order-1 justify-self-center md:order-2 md:justify-self-end'
       /> */}
     </header>

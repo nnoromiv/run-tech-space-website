@@ -11,23 +11,23 @@ function Hero() {
           <span
             className={`heroLine bg-no-repeat pb-2 [background-position:_0_33px] lg:bg-bottom lg:pb-0`}
           >
-            tech skills
+            the ultimate skill
           </span>{" "}
-          that would groom your career
+          to groom your career
         </h1>
         <p className=' lg:text-2xl'>
-          Be a member of the community and stand a chance to build your tech
-          career with the help of our amazing tutors.
+          Being a member of the community gives you the chance to create a technological
+          career with the help of our community a dream becomes reality.
         </p>
-
         <Button type='link' href='/join_us'>
-          Become a member
+          Build your career
         </Button>
       </div>
 
-      <img
+      <Image
         src='/images/heroBg.png'
         alt='banner'
+        height={"100%"} width={"100%"}
         className='order-1 justify-self-center md:order-2 md:justify-self-end'
       />
     </header>

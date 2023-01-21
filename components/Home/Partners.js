@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 function Partners() {
@@ -7,8 +8,9 @@ function Partners() {
         <h2 className='heading2'>Ours Partners</h2>
 
         <div className='mx-auto mt-12 flex max-w-md justify-around gap-5'>
-          <img src='/images/runsa.png' alt='runsa' />
-          <img src='/images/hoshistech.png' alt='hoshistech' />
+          <Image src='/images/runsa.png' alt='runsa' height={"200px"} width={"300px"}/>
+          <Image src='/images/hoshistech.png' alt='hoshistech' height={"200px"} width={"300px"}/>
+          <Image src='/images/microsoft-logo.png' alt='microsoft' height={"127px"} width={"300px"}/>
         </div>
       </div>
     </section>

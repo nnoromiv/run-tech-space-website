@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 function Benefits({ heading, data }) {
@@ -6,9 +7,10 @@ function Benefits({ heading, data }) {
       <div>
         <h2 className='heading2 text-left md:leading-[50px]'>{heading}</h2>
 
-        <img
+        <Image
           src='/images/benefit-line.svg'
           alt=''
+          height={"50px"} width={"50px"}
           className='ml-auto mr-20 mt-12 hidden md:block'
         />
       </div>

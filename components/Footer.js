@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 function Footer() {
   return (
@@ -8,7 +9,7 @@ function Footer() {
         <div className='mb-16 grid grid-cols-12 md:gap-5'>
           <Link href='/'>
             <a className='col-span-12 mx-auto md:col-span-3 md:ml-0'>
-              <img src='/images/logo.svg' alt='RUN Tech Space' />
+              {/* <Image src='/images/logo.svg' alt='RUN Tech Space' width={'50px'} height={'50px'} /> */}
             </a>
           </Link>
 
@@ -38,10 +39,20 @@ function Footer() {
                   text: "Frontend development",
                   link: "/stack/frontend-development",
                 },
-                { text: "UI & UX design", link: "/stack/ui-ux-design" },
+                {
+                  text: "Backend development",
+                  link: "/stack/backend-development",
+                },
+                { text: "UI & UX design", 
+                link: "/stack/ui-ux-design" 
+                },
                 {
                   text: "AI & Data Science",
                   link: "/stack/artificial-intelligence-&-data-science",
+                },
+                {
+                  text: "Cybersecurity",
+                  link: "/stack/cybersecurity",
                 },
               ].map((item, index) => (
                 <li key={index} className='text-grey'>
@@ -69,7 +80,7 @@ function Footer() {
               ].map((item, ind) => (
                 <Link key={ind} href={item.link}>
                   <a>
-                    <img src={item.image} alt='icon' />
+                    <Image src={item.image} alt='icon' height={"50px"} width={"50px"} />
                   </a>
                 </Link>
               ))}

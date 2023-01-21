@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 function Gain({ gain }) {
@@ -12,7 +13,7 @@ function Gain({ gain }) {
               key={id}
               className='gap-4 text-center md:grid md:grid-cols-[40px_1fr] md:text-left'
             >
-              <img src={item.img} alt='' className='mx-auto md:ml-0' />
+              <Image src={item.img} alt='' className='mx-auto md:ml-0' width={"80px"} height={"80px"} />
               <div>
                 <h3 className='text-lg font-medium md:text-xl'>{item.hd}</h3>
                 <p className='md:text-lg'>{item.text}</p>

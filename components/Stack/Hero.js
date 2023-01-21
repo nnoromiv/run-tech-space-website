@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import Button from "../Button";
 
@@ -28,9 +29,10 @@ function Hero({ link, heading, description, img, ai }) {
         </Button>
       </div>
 
-      <img
+      <Image
         src={img}
         alt='banner'
+        width={"80px"} height={"80px"}
         className='order-1 w-full max-w-[500px] justify-self-center md:order-2 md:justify-self-end'
       />
     </header>

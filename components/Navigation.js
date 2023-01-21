@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState, useEffect } from "react";
@@ -24,7 +25,7 @@ function Navigation() {
       <div className='container flex items-center justify-between '>
         <Link href='/'>
           <a>
-            <img src='/images/logo.svg' alt='RUN Tech Space' />
+            <Image src='/images/logo.svg' alt='RUN Tech Space' width={"80px"} height={"80px"} />
           </a>
         </Link>
 
@@ -57,11 +58,10 @@ function Navigation() {
         <div className='flex items-center space-x-4'>
           <Button
             type='secondary'
-            className='hidden items-center gap-2 md:inline-flex'
+            className='hidden items-center gap-2 border-none md:inline-flex'
             href='https://chat.whatsapp.com/EnEuaN5k28O9NG4jwSTD7m'
           >
-            <img src='/images/whatsapp.svg' alt='whatsapp' />
-            Join us on WhatsApp
+            <Image src='/images/whatsapp.svg' height={"30px"} width={"30px"} alt='whatsapp' />
           </Button>
           <Button type='link' href='/join_us'>
             Join us
@@ -123,7 +123,7 @@ function Navigation() {
               className='inline-flex items-center gap-2'
               href='https://chat.whatsapp.com/EnEuaN5k28O9NG4jwSTD7m'
             >
-              <img src='/images/whatsapp.svg' alt='whatsapp' />
+              <Image src='/images/whatsapp.svg' height={"30px"} width={"30px"} alt='whatsapp' />
               Join us on WhatsApp
             </Button>
           </li>

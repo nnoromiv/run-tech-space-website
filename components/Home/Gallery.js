@@ -11,6 +11,7 @@ import "swiper/css/thumbs";
 // import required modules
 import { FreeMode, Navigation, Thumbs, Pagination } from "swiper";
 import SkeletonLoader from "../SkeletonLoader";
+import Image from "next/image";
 
 function Gallery() {
   const [thumbsSwiperMobile, setThumbsSwiperMobile] = useState(null);
@@ -55,7 +56,7 @@ function Gallery() {
             ) : (
               gallery.map((image, index) => (
                 <SwiperSlide key={index}>
-                  <img src={image.url} className='object-cover' />
+                  <Image src={image.url} className='object-cover' alt=""/>
                 </SwiperSlide>
               ))
             )}
@@ -87,7 +88,7 @@ function Gallery() {
               gallery &&
               gallery.map((image, index) => (
                 <SwiperSlide key={index}>
-                  <img src={image.url} className='object-cover' />
+                  <Image src={image.url} className='object-cover' alt=""/>
                 </SwiperSlide>
               ))
             )}
@@ -111,7 +112,7 @@ function Gallery() {
             {gallery &&
               gallery.map((image, index) => (
                 <SwiperSlide key={index}>
-                  <img src={image.url} className='object-cover' />
+                  <Image src={image.url} className='object-cover' alt=""/>
                 </SwiperSlide>
               ))}
           </Swiper>

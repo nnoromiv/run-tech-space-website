@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import Link from "next/link";
 import Button from "../../components/Button";
 
@@ -13,7 +14,7 @@ function success() {
         <aside className='col-span-12 bg-[#1253A6] bg-[url(../public/images/joinUsBg.png)] bg-cover bg-no-repeat py-12 px-8 md:col-span-4  md:block md:px-12'>
           <Link href='/'>
             <a className='inline-flex items-center gap-3 text-white'>
-              <img src='/images/arrow-left.svg' alt='' aria-hidden='true' />
+              <Image src='/images/arrow-left.svg' alt='' height={"50px"} width={"50px"} aria-hidden='true' />
               Return to Homepage
             </a>
           </Link>
@@ -26,9 +27,10 @@ function success() {
             <span className='text-[#1253A6]'>RUN Tech Space</span>.
           </p>
 
-          <img
+          <Image
             src='/images/success.svg'
             alt='congrats'
+            height={"50px"} width={"50px"}
             className='mx-auto my-8 w-full max-w-[600px]'
           />
 
@@ -37,7 +39,7 @@ function success() {
             href='https://chat.whatsapp.com/EnEuaN5k28O9NG4jwSTD7m'
             className='mx-auto flex max-w-fit items-center justify-center gap-2'
           >
-            <img src='/images/whatsapp.svg' alt='whatsapp' />
+            <Image src='/images/whatsapp.svg' height={"50px"} width={"50px"} alt='whatsapp' />
             Join us on WhatsApp
           </Button>
         </div>

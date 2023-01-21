@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Listbox } from "@headlessui/react";
+import Image from "next/image";
 
 const stacks = [
   { name: "Frontend Development" },
@@ -18,9 +19,10 @@ function StackSelect({ selectedStack, setSelectedStack }) {
           {({ open }) => (
             <>
               Select Stacks
-              <img
+              <Image
                 src='/images/cherivon.svg'
                 alt=''
+                height={"20px"} width={"20px"}
                 className={`absolute top-[50%] right-2 -translate-y-[50%] ${
                   open ? "rotate-180" : ""
                 }`}
